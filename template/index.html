@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudtech</title>
+    <link rel="shortcut icon" href="img/cloudif.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e47052057c.js" crossorigin="anonymous"></script>
+    <script type="module" src="JS/index.js"></script>
+    <link href="{{ url_for('static',filename='css/1-header.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='css/2-producto-slider.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='css/3-servicios.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='css/4-descripcion.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='css/5-consultas.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='css/7-footer.css') }}" rel="stylesheet" type="text/css">        
+</head>
+<body>
+    <header id="inicio" class="header">
+        <video autoplay  loop  muted class="back-video">
+            <source src="static/img/video.mp4" type="video/mp4">
+        </video>
+        <div class="menu">
+            <a href="#inicio" class="logo container">Cloudtech</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="static/img/menu.png" alt="" class="menu-icono">
+            </label>
+            <nav class="navbar container">
+                <ul>
+                    <li><a href="#inicio"  class="enlaces-menu">Inicio</a></li>
+                    <li><a href="#¿Porque Cloudtech?" class="enlaces-menu">Quienes somos</a></li>
+                    <li><a href="#servicios" class="enlaces-menu">Servicios</a></li>
+                    <li><a href="#contacto" class="enlaces-menu">Contacto</a></li>
+                    
+                    <li><a href="https://www.youtube.com/" class="redes-menu"><i class="social__icon fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" class="redes-menu"><i class="social__icon fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/" class="redes-menu"><i class="social__icon fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/" class="redes-menu"><i class="social__icon fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1> <span>Especialistas en soluciones tecnológicas</span>  <br>Potencia tu empresa</h1>
+                <p>
+                    En Cloudtech creemos que el camino de la innovación es el principal
+                    diferenciador para optimizar el negocio de nuestros clientes.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <a href="#contacto" class="btn-1"><p>Contactanos</p></a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section id="¿Porque Cloudtech?" class="espaciado">  
+        </section>
+
+        <section  class="title">
+            <div>
+                <h2><span>CLOUDTECH</span>, la Evolución Tecnológica.</h2>
+                <p>TRABAJEMOS JUNTOS Y HAGAMOS CRECER TU EMPRESA</p>
+            </div>
+        </section>
+        <section class="texto-principal container">
+            <div class="imagen">
+                <img src="static/img/quienessomos2.jpg" alt="Quienes somos">
+            </div>
+            <div class="parrafo">
+                <p> Somos una empresa formada por profesionales con más de 20 años en el Mercado de Tecnología.
+                    Somos entusiastas, metódicos, y nos dedicados a los proyectos que ayudan a mejorar los procesos de las Empresas, para que se enfoquen en su Core de negocio.
+                    Apostamos fuertemente a la calidad humana y la relación con nuestros clientes, lo que nos hace sentir como propios sus objetivos y así ayudarlos en el camino.
+                </p>
+                <ul class="propuestas">
+                    <li>Alianza con los principales partners tecnológicos.</li>
+                    <li>Aprovecha los beneficios de migrar tu Infraestructura y Servicios a la nube.</li>
+                    <li>Explora los casos de éxito de nuestros clientes y conviertete en uno ellos.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section  class="contenedor-principal">
+            <section class="slider container">
+                <div class="slider-frame">
+                   <ul>
+                        <li><img src="static/img/1.jpg" alt=""></li>
+                        <li><img src="static/img/2.jpg" alt=""></li>
+                        <li><img src="static/img/3.jpg" alt=""></li>
+                        <li><img src="static/img/4.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </section>    
+        </section>
+
+        <section id="servicios"  class="espaciado">  
+        </section>
+        <section  class="inter container">
+            <div  class="intermedio">
+                <h4>Nuestros servicios</h4>
+                <p>Nos especializamos en los siguientes servicios:</p>
+            </div>
+        </section>
+
+
+        <section class="tarjetas">
+            <div class="contanador container">
+                <div class="card">
+                    <div class="lines1"></div>
+                    <div class="imgBx">
+                        <img src="static/img/bigdata.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>BIG DATA</h2>
+                            <p>Soluciones y servicios de Big Data que transforman los datos en valor. Integracion como soluciones IOT y deep learning.</p>
+                            <a href="{{url_for('bigData')}}">+ INFO</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="lines2"></div>
+                    <div class="imgBx">
+                        <img src="static/img/AI.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>AI</h2>
+                            <p>Servicios de inteligencia artificial para impulsar su negocio. Chatbots para empresas, desarrollo de modelos y análisis de datos.</p>
+                            <a href="{{url_for('AI')}}">+ INFO</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="lines3"></div>
+                    <div class="imgBx">
+                        <img src="static/img/Desarrollo web.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>DESARROLLO WEB</h2>
+                            <p>Soluciones de desarrollo web, programación de UI/UX y desarrollo de portales por desarrolladores especialistas.</p>
+                            <a href="{{url_for('web')}}">+ INFO</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="lines4"></div>
+                    <div class="imgBx">
+                        <img src="static/img/cloud.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <h2>CLOUD COMPUTING</h2>
+                            <p>Migre la Infraestructura y Servicios de IT a la nube y aproveche todos sus beneficios. Modelos de servicios IAAS, PAAS y SAAS</p>
+                            <a href="{{url_for('cloud')}}">+ INFO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="descripcion">
+            <div class="description container">
+                <div class="parte-one">
+                    <h1>
+                        Ofrecemos una amplia gama de soluciones para potenciar su negocio, desde desarrollos web y campañas para impulsar el tráfico de tu sitio. Soluciones de análisis de datos, Big Data, IOT y servicios Cloud.
+                    </h1>
+                    <img src="static/img/Descripcion/01cf.png" alt="">
+                </div>
+                <div class="parte-two">
+                    <img src="static/img/Descripcion/espacio-autonomo.png" alt="">
+                    <h1>
+                        En Cloudtech, los Servicios de Integración y Automatización de Procesos son nuestra prioridad. Acompañamos a nuestros clientes en la evolución. 
+                    </h1>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="elegirnos container" id="indicador">
+            <div class="elegirnos-title">
+                <h1>Nuestras Alianzas</h1>
+            </div>
+            <div class="elegirnos-cajas">
+                <div>
+                    <img src="static/img/aws_logo.png" width="235" height="96" alt="aws" sizes="(max-width: 400px) 100vw">
+                </div>
+                <div>
+                    <img src="static/img/InvGate-Gold-Partner.png" width="200" height="96" alt="InvGate" sizes="(max-width: 469px) 100vw">
+                </div>
+                <div>
+                    <img src="static/img/IBM-Partner-1-1.png" width="235" height="96" alt="ibm" sizes="(max-width: 469px) 100vw">
+                </div>
+                <div>
+                    <img src="static/img/logo-vmware.png" width="235" height="50" alt="vmware" sizes="(max-width: 469px) 100vw">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto"  class="espaciado">  
+        </section>
+
+        <section class="formulario" id="form">
+            <div class="content-form">
+
+                <h1 class="brand">Ponete en contacto con <span>nosotros</span></h1>
+
+                <div class="contact-wrapper">
+
+                    <div class="contact-form">
+                        <form id="form1" action="destino.html" onsubmit="return validacion();">
+                            <p>
+                                <label for="fullname">Nombre completo</label>
+                                <input type="text" name="fullname" id="fullname" placeholder="Ingrese su nombre" >  
+                            </p>
+                            <p>
+                                <label>Correo electrónico</label>
+                                <input type="email" name="email" id="correo" placeholder="Ingrese su correo electrónico" >
+                            </p>
+                            <p>
+                                <label>Teléfono</label>
+                                <input type="tel" name="phone" id="telefono" placeholder="Ingrese su número telefonico" >
+                            </p>
+                            <p>
+                                <label>Empresa</label>
+                                <input type="text" name="affair" id="empresa" placeholder="Empresa" >
+                            </p>
+                            <p class="block">
+                                <label>Mensaje</label>
+                                <textarea name="message" rows="2" placeholder="Mensaje" ></textarea>
+                            </p>
+                            <p class="block">
+                                <button type="submit" value="Enviar">
+                                    Enviar
+                                </button>
+                            </p>
+                        </form>
+                        <div id="error"></div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4>Más información</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> CABA, Dorrego 8000</li>
+                            <li><i class="fas fa-phone"></i> +54 112250-9999</li>
+                            <li><i class="fas fa-envelope-open-text"></i> cloudtech@gmail.com</li>
+                        </ul>
+                        <p class="formulario-parrafo"> Completá tus datos y nos contactaremos para asesorarte a la brevedad. 
+                        </p>
+                        <p>cloudtech.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function validacion()
+    {
+        fullname = document.getElementById("fullname").value;
+        email = document.getElementById("correo").value;
+        phone = document.getElementById("telefono").value;
+        affair = document.getElementById("empresa").value;
+
+        if (fullname === '') 
+        {
+            document.getElementById('error').innerHTML = "Tenes que completar todos los datos!";
+            return false;
+        }
+        else if (email === '') {
+            document.getElementById('error').innerHTML = "Tenes que completar todos los datos!";
+            return false;
+        }
+        else if (phone === '') {
+            document.getElementById('error').innerHTML = "Tenes que completar todos los datos!";
+            return false;
+        }
+        else if (affair === '') {
+            document.getElementById('error').innerHTML = "Tenes que completar todos los datos!";
+            return false;
+        }
+        return true;
+    }
+</script>
+    <footer class="footer-distributed">
+        <section class="footer-caja">
+            <div  class="footer-left">
+                <img src="static/img/cloud1.png" alt="">
+                <h3>
+                    <span>Cloudtech</span></h3>
+
+                <p class="footer-links">
+                        Soluciones tecnológicas para empresas
+                </p>
+                <p class="footer-company-name">Copyright @ 2024 <strong>Cloudtech</strong><br><br>
+                    Realizado por: <br>Martin del Valle y Vanessa Inca</p>
+
+            </div>
+
+            <div class="footer-center">
+                <div class="footer-text">
+                    <i class="fa fa-map-marker"></i>
+                    <p>CABA, Dorrego 8000</p>
+                </div>
+
+                <div class="footer-text">
+                    <i class="fa fa-phone"></i>
+                    <p>+54 112250-9999</p>
+                </div>
+
+                <div class="footer-text">
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">cloudtech@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-company-about">
+                    <span>Sobre nosotros</span>
+                    <p>Somos una empresa de soluciones tecnológicas, compuesta por un equipo interdisciplinario con mas de 20 años de experiencia en la industria. Explore el impacto de nuestros productos, servicios y personas que lo hacen posible.</p>
+                </div>
+                    
+
+                <div class="footer-icons">
+                    <a href="https://www.youtube.com/"><i class="social__icon fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="social__icon fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="social__icon fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="social__icon fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+</body>
+</html>

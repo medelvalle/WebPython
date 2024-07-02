@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudtech</title>
+    <link rel="shortcut icon" href="img/cloudif.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e47052057c.js" crossorigin="anonymous"></script>
+    <link href="{{ url_for('static',filename='css/8-estilos2.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='css/9-consultas2.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='css/7-footer.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+<header id="inicio" class="header">
+
+    <div class="menu">
+        <a href="#inicio" class="logo container">Cloudtech</a>
+        <nav class="navbar container">
+            <ul>
+                <li><a href="{{url_for('index')}}" class="enlaces-menu">Volver a Inicio</a></li>
+
+                <li><a href="https://www.youtube.com/" class="redes-menu"><i class="social__icon fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/" class="redes-menu"><i class="social__icon fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/" class="redes-menu"><i class="social__icon fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" class="redes-menu"><i class="social__icon fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<main>
+    <div class="contenedor">
+        <div class="texto-principal">
+            <section class="texto">
+            <br>
+            <h2>¿Qué es Big Data?</h2>
+            <br>
+            <p> Conjuntos de datos extremadamente grandes y complejos que son difíciles de procesar utilizando métodos
+                tradicionales de análisis de datos.</p>
+            <br>
+            <h2>¿Qué tecnologias y herramientas utilizamos?</h2>
+            <br>
+            <p> Hadoop, Spark, Apache Kafka, MongoDB, entre otras.</p>
+            <br>
+            </section>
+        </div>
+
+        <img src="static/img/big data.jpeg" class="imagen" alt="">
+    </div>
+    <section class="texto-principal">
+        <h2>Ventajas</h2>
+        <br>
+        <ul class="propuestas">
+            <li>Conseguir nuevas oportunidades de negocio.</li>
+            <li>Conocer en profundidad a sus clientes.</li>
+            <li>Retorno de inversión asegurado.</li>
+            <li>Casos de uso: Medicina, fisica, marketing, negocios, comunicación, etc</li>
+        </ul>
+    </section>
+    <section class="formulario" id="form">
+        <div class="content-form">
+    
+            <h1 class="brand">Regístrese a un Webinar gratuito de <span>Big Data</span></h1>
+    
+            <div class="contact-wrapper">
+    
+                <div class="contact-form">
+                    <form id="form1" action="destino.html" onsubmit="return validacion()";>
+                        <p>
+                            <label for="fname">Nombre</label>
+                            <input type="text" name="name" id="fname" placeholder="Ingrese su nombre" >  
+                        </p>
+                        <p>
+                            <label>Apellido</label>
+                            <input type="text" name="apellido" id="Apellido" placeholder="Ingrese su apellido" >
+                        </p>
+                        <p>
+                            <label>Empresa</label>
+                            <input type="text" name="affair" id="Empresa" placeholder="Empresa" >
+                        </p>
+                        <p>
+                            <label>Cargo</label>
+                            <input type="text" name="Cargo" id="Cargo" placeholder="Cargo">
+                        </p>
+                        <p class="block">
+                            <label>Correo electronico</label>
+                            <input type="email" name="email" id="Email" placeholder="Ingrese su correo electronico" >
+                        </p>
+                        <p class="btn2">
+                            <button type="reset" value="Borrar">
+                                Borrar
+                            </button>
+                        </p>
+                        <p class="btn2">
+                            <button type="submit" value="Enviar">
+                                Enviar
+                            </button>
+                        </p>
+                        
+                    </form>
+                    <div id="error"></div>
+                </div>
+    
+                <div class="contact-info">
+                    <h4>Acerca del evento</h4>
+                    <p class="formulario-parrafo">Aprenderas sobre Big Data, fundamentos y campos de Aplicaciones.</p>
+                    <p class="formulario-parrafo">Prácticas con un instructor en línea.</p>
+                    <p class="formulario-parrafo">Completá tus datos y reserva tu lugar, hay cupos limitados.</p>
+                    <p>cloudtech.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="static/js/form.js"></script>
+        </main>
+    
+        <footer class="footer-distributed">
+            <section class="footer-caja">
+                <div  class="footer-left">
+                    <img src="static/img/cloud1.png" alt="">
+                    <h3>
+                        <span>Cloudtech</span></h3>
+    
+                    <p class="footer-links">
+                            Soluciones tecnológicas para empresas
+                    </p>
+                    <p class="footer-company-name">Copyright @ 2024 <strong>Cloudtech</strong><br><br>
+                        Realizado por: <br>Martin del Valle y Vanessa Inca</p>
+    
+                </div>
+    
+                <div class="footer-center">
+                    <div class="footer-text">
+                        <i class="fa fa-map-marker"></i>
+                        <p>CABA, Dorrego 8000</p>
+                    </div>
+    
+                    <div class="footer-text">
+                        <i class="fa fa-phone"></i>
+                        <p>+54 112250-9999</p>
+                    </div>
+    
+                    <div class="footer-text">
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">cloudtech@gmail.com</a></p>
+                    </div>
+                </div>
+    
+                <div class="footer-right">
+                    <div class="footer-company-about">
+                        <span>Sobre nosotros</span>
+                        <p>Somos una empresa de soluciones tecnológicas, compuesta por un equipo interdisciplinario con mas de 20 años de experiencia en la industria. Explore el impacto de nuestros productos, servicios y personas que lo hacen posible.</p>
+                    </div>
+                        
+    
+                    <div class="footer-icons">
+                        <a href="https://www.youtube.com/"><i class="social__icon fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="social__icon fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/"><i class="social__icon fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="social__icon fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </section>
+    
+        </footer>
+    </body>
+    </html>
