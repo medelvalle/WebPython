@@ -99,7 +99,7 @@ def edit(id):
         db.database.commit()
     return redirect(url_for('AI'))
 
-#ejecucion al servidor localhost 4000
+#ejecucion al servidor localhost 4000 (Estas lineas se eliminan en Pythonanywhere)
 if __name__=='__main__':
     app.run(debug=True,port=4000)
 
